@@ -26,15 +26,15 @@ export const links: MenuItemsType[] = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
+        href: "https://cheemswap.dog/swap",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
+        href: "https://cheemswap.dog/swap/#/pool",
       },
       {
         label: "Charts",
-        href: "https://exchange.pancakeswap.finance/#/charts",
+        href: "https://cheemswap.dog/swap//#/charts",
         iconName: "Chart",
         isMobileOnly: true,
       },
@@ -54,7 +54,7 @@ export const links: MenuItemsType[] = [
         href: "/",
       },
       {
-        label: "Syrup pools",
+        label: "Super Pools",
         href: "/",
       },
     ],
@@ -149,7 +149,7 @@ export const userMenulinks: DropdownMenuItems[] = [
   },
   {
     type: DropdownMenuItemType.EXTERNAL_LINK,
-    href: "https://pancakeswap.finance",
+    href: "https://cheemswap.dog",
     label: "Link",
   },
   {
@@ -162,7 +162,7 @@ export const userMenulinks: DropdownMenuItems[] = [
   },
 ];
 
-export const MENU_HEIGHT = 56;
+export const MENU_HEIGHT = 76;
 export const MENU_ENTRY_HEIGHT = 48;
 export const MOBILE_MENU_HEIGHT = 44;
 export const SIDEBAR_WIDTH_FULL = 240;

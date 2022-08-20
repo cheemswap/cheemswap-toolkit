@@ -41,9 +41,29 @@ const getBorderColor = ({ isActive, isSuccess, isWarning, borderBackground, them
   return theme.colors.cardBorder;
 };
 
+const getBoxShadow = ({ isActive, isSuccess, isWarning, theme }: StyledCardProps) => {
+  if (isWarning) {
+    return theme.card.boxShadowWarning;
+  }
+
+  if (isSuccess) {
+    return theme.card.boxShadowSuccess;
+  }
+
+  if (isActive) {
+    return theme.card.boxShadowActive;
+  }
+
+  return theme.card.boxShadow;
+};
+
 export const StyledCard = styled.div<StyledCardProps>`
   background: ${getBorderColor};
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   border-radius: ${({ theme }) => theme.radii.card};
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  box-shadow: ${getBoxShadow};
   color: ${({ theme, isDisabled }) => theme.colors[isDisabled ? "textDisabled" : "text"]};
   overflow: hidden;
   position: relative;

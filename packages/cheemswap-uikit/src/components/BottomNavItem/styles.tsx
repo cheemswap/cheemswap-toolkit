@@ -9,11 +9,11 @@ export const StyledBottomNavItem = styled.button`
   height: 44px;
   padding: 4px 12px;
   &:hover {
-    border-radius: 16px;
+    border-radius: 4px;
   }
   &:hover,
   &:hover div {
-    background: ${({ theme }) => theme.colors.tertiary};
+    background: ${({ theme }) => theme.colors.background};
   }
 `;
 

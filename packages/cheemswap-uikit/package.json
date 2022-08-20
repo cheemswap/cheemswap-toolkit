@@ -1,7 +1,7 @@
 {
-  "name": "@cheemsswap/uikit",
+  "name": "@cheemswap/uikit",
   "version": "1.1.0",
-  "description": "Set of UI components for pancake projects",
+  "description": "Set of UI components for Cheemswap projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
